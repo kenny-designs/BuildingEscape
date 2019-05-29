@@ -2,6 +2,7 @@
 
 
 #include "OpenDoor.h"
+#include "GameFramework/Actor.h"
 
 // Sets default values for this component's properties
 UOpenDoor::UOpenDoor()
@@ -19,8 +20,9 @@ void UOpenDoor::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
-	
+	AActor* Owner = GetOwner();
+	FRotator NewRotation(0.0f, -60.0f, 0.0f);
+	Owner->SetActorRotation(NewRotation);
 }
 
 
