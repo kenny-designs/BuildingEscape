@@ -6,6 +6,7 @@
 #include "Components/ActorComponent.h"
 #include "GameFramework/PlayerController.h"
 #include "DrawDebugHelpers.h"
+#include "CollisionQueryParams.h"
 #include "Grabber.generated.h"
 
 
