@@ -7,6 +7,7 @@
 #include "GameFramework/PlayerController.h"
 #include "DrawDebugHelpers.h"
 #include "CollisionQueryParams.h"
+#include "PhysicsEngine/PhysicsHandleComponent.h"
 #include "Grabber.generated.h"
 
 
@@ -30,4 +31,6 @@ public:
 private:
 	// How far the player can reach in cm
 	float Reach = 100.0f;
+
+	UPhysicsHandleComponent* PhysicsHandle = nullptr;
 };
